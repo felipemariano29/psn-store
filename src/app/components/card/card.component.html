@@ -1,1 +1,10 @@
-<p>card works!</p>
+<a href="#" class="card__container">
+  <img class="card__image" [src]="game.imgUrl" alt="Capa do Jogo" />
+
+  <app-card-label [gameLabel]="game.label"></app-card-label>
+
+  <app-card-pricing
+    [gameType]="game.type"
+    [gamePrice]="game.price"
+  ></app-card-pricing>
+</a>
